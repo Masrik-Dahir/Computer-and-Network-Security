@@ -10,6 +10,7 @@ while 1:
     print ("accept")
     sentence = connection_socket.recv(2048).decode()
     option = connection_socket.recv(2048).decode()
+
     print ("Message Received: " + sentence)
     vowel = ['a', 'e', 'i', 'o', 'u']
     count = 0
