@@ -8,8 +8,8 @@ while 1:
     print ("Waiting ...")
     connection_socket, addr = server.accept()
     print ("accept")
-    sentence = connection_socket.recv(2048).decode()
-    option = connection_socket.recv(2048).decode()
+    sentence = connection_socket.recv(2048).decode(encoding = 'iso-8859-1')
+    option = connection_socket.recv(2048).decode(encoding = 'iso-8859-1')
 
     print ("Message Received: " + sentence)
     vowel = ['a', 'e', 'i', 'o', 'u']
