@@ -21,4 +21,4 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           architecture: x64
-      - run: cd Assignment\ 1; ./main.sh
+      - run: cd Assignment\ 1; chmod 777 main.sh; ./main.sh
